@@ -11,7 +11,7 @@ public class Study {
 
     private String course;
 
-    //TODO
+    /* TODO */
 
     public String printCourse() {
         return this.course;

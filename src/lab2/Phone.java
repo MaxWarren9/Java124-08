@@ -30,4 +30,7 @@ public class Phone {
         this.memory = memory;
     }
 
+    public static void main(String[] args) {
+
+    }
 }
