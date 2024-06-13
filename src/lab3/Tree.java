@@ -10,4 +10,46 @@ package lab3;
  */
 
 public class Tree {
+    private int age;
+    private boolean isLive;
+    private String name;
+
+    public Tree(int age, String name) {
+        this.age = age;
+        this.name = name;
+        System.out.println(age + ", " + isLive + ", " + name);
+    }
+    public Tree(int age, boolean isLive, String name) {
+        this.age = age;
+        this.isLive = isLive;
+        this.name = name;
+        System.out.println(age + ", " + isLive + ", " + name);
+    }
+    public Tree() {
+        System.out.println("Пустой конструктор без параметров сработал");
+    }
+    public String getName(){
+        return name;
+    }
+    public void setName(){
+        this.name = name;
+    }
+    public int getAge(){
+        return age;
+    }
+    public void setAge(){
+        this.age = age;
+    }
+    public boolean getIsLive(){
+        return isLive;
+    }
+    public void setisLive(){
+        this.isLive = isLive;
+    }
+
+    public static void main(String[] args) {
+        Tree tree1 = new Tree();
+        Tree tree2 = new Tree(2, "Nick");
+        Tree tree3 = new Tree(3,true,"Max");
+    }
 }

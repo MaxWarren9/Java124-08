@@ -1,4 +1,7 @@
 package lab3;
+
+import java.util.Arrays;
+
 /*
 Допишите в класс «Study» конструктор, что будет принимать
 один параметр и будет устанавливать значение этого параметра
@@ -11,9 +14,16 @@ public class Study {
 
     private String course;
 
-    /* TODO */
+    public Study(String course) {
+        this.course = course;
+    }
 
     public String printCourse() {
         return this.course;
+    }
+
+    public static void main(String[] args) {
+        Study study = new Study("Изучение Java - это просто!");
+        System.out.println(study.printCourse());
     }
 }
